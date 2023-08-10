@@ -1,0 +1,39 @@
+#include <stdio.h>
+float sal;
+ int ler_sal()
+{
+    printf("Digite seu salario: ");
+    scanf("%f", &sal);
+    return 0;
+        
+}
+ int calculo_Sal()
+    {
+    if(sal >1000 && sal<=2000)
+    {
+        sal*=1.25;
+    }
+    else if(sal >2000 && sal <=3000)
+    {
+        sal*=1.20;
+    }
+    else if(sal >3000 && sal <=4000)
+    {
+    sal*=1.15;    
+    }
+    
+    return 0;
+        
+    }
+ int printar_Sal()
+ {
+     printf("%f", sal);
+     return 0;
+ }
+
+int main() {
+    ler_sal();
+    calculo_Sal();
+    printar_Sal();
+    return 0;
+}
