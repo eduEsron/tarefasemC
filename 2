@@ -1,0 +1,22 @@
+#include <stdio.h>
+float valor;
+int triplo()
+{
+    valor *= 3;
+    printf("%f", valor);
+    printf("\n");
+}
+int dobro()
+{
+    valor *= 2;
+    
+    printf("%f", valor);
+}
+int main() {
+   printf("Digite um valor: ");
+   scanf("%f", &valor);
+    dobro();
+    triplo();
+   return 0;
+    
+}
